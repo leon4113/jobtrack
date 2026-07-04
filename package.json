@@ -1,0 +1,33 @@
+{
+  "name": "jobtrack",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/leon4113/jobtrack#readme",
+  "bugs": {
+    "url": "https://github.com/leon4113/jobtrack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon4113/jobtrack.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "lint": "eslint . && eslint --config client/eslint.config.js client",
+    "build": "echo TODO"
+  },
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "prettier": "^3.0.0",
+    "@eslint/js": "^9.0.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
