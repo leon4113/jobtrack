@@ -14,10 +14,10 @@
 
 ### 1.1 Project skeleton & tooling
 
-- [ ] Monorepo layout: `client/` (React + Vite + TS), `server/` (Node + TS), `shared/` (types)
-- [ ] Express or Hono server with a `/health` endpoint; Vite dev proxy pointed at it
-- [ ] ESLint + Prettier, `tsconfig` per package with a shared base
-- [ ] npm scripts: `dev` (runs client + server concurrently), `build`, `lint`
+- [x] Monorepo layout: `client/` (React + Vite + TS), `server/` (Node + TS), `shared/` (types)
+- [x] Hono server with a `/health` endpoint; Vite dev proxy pointed at it
+- [x] ESLint + Prettier, `tsconfig` per package with a shared base
+- [x] npm scripts: `dev` (runs client + server concurrently), `build`, `lint`
 - **Done when:** `npm run dev` starts both apps and the client can fetch `/health`.
 - **Learning focus:** monorepo wiring, TS project references.
 
